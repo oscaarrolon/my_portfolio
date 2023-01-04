@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
+import { ActiveService } from 'src/app/services/active.service';
 
 @Component({
   selector: 'app-inicio',
@@ -8,11 +9,17 @@ import { OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
+  active: boolean
+
+  constructor(private activeService: ActiveService) {
+    this.active = false
+  }
 
   ngOnInit() {
-    setTimeout(() => {
-    }, 5000);
+
+    this.activeService.active.subscribe((active: boolean) => {
+      this.active = !active
+    })
 
   }
 

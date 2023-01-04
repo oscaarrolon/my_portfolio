@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
 }
 
 .navigation div img {
@@ -52,11 +53,12 @@
 
 
     .navigation {
-        height: 100vh;
+        height: 12vh;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         padding: 20px;
+        background-color: #1b1c1d;
 
     }
 
@@ -92,6 +94,7 @@
 
     .active {
         opacity: 0;
+        z-index: -1;
     }
 
 

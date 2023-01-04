@@ -12,6 +12,7 @@
     grid-template-columns: 50% 100%;
     gap: 0px 0px;
     min-height: 100vh;
+    transition: .5s;
 }
 
 .text {
@@ -55,4 +56,10 @@
     background-size: cover;
     background-position: center;
     opacity: .6;
+}
+
+
+.active {
+    transition: .5s;
+    opacity: 0;
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
+import { ActiveService } from '../../services/active.service';
 
 @Component({
   selector: 'app-nav',
@@ -10,7 +11,7 @@ export class NavComponent implements OnInit {
 
   active: boolean
 
-  constructor() {
+  constructor(private activeService: ActiveService) {
     this.active = true
 
   }
@@ -21,6 +22,8 @@ export class NavComponent implements OnInit {
 
   toggleMenu() {
     this.active = !this.active
+    this.activeService.active.emit(this.active)
+
   }
 
 

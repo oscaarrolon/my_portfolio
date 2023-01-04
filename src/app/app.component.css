@@ -1,0 +1,18 @@
+.cont {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 0.3fr 2.7fr;
+    gap: 60px 0px;
+}
+
+
+.cont app-nav {
+    position: absolute;
+    z-index: 1;
+}
+
+.cont router-outlet {
+    margin-top: 50vh;
+    position: absolute;
+    z-index: 1;
+}
