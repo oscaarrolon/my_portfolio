@@ -2,10 +2,11 @@
     background-color: #1b1c1d;
     width: 100%;
     height: 40px;
+    padding-top: 4vh;
     border: solid 1px #1b1c1d;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
 }
 
@@ -36,6 +37,13 @@
     color: #b97b6e;
 }
 
+.color {
+    color: #fff;
+}
+
+.active {
+    color: #b97b6e;
+}
 
 
 .toggle {
@@ -47,6 +55,8 @@
 
     transform: rotate(90deg);
 }
+
+
 
 
 @media screen and (max-width: 800px) {

@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './components/inicio/inicio.component';
 
 const routes: Routes = [
-  { path: '**', component: InicioComponent },
   { path: 'inicio', component: InicioComponent }
 ];
 

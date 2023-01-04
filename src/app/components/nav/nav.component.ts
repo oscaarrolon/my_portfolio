@@ -9,10 +9,10 @@ import { ActiveService } from '../../services/active.service';
 })
 export class NavComponent implements OnInit {
 
-  active: boolean
+  isActive: boolean
 
   constructor(private activeService: ActiveService) {
-    this.active = true
+    this.isActive = true
 
   }
 
@@ -21,8 +21,8 @@ export class NavComponent implements OnInit {
   }
 
   toggleMenu() {
-    this.active = !this.active
-    this.activeService.active.emit(this.active)
+    this.isActive = !this.isActive
+    this.activeService.active.emit(this.isActive)
 
   }
 

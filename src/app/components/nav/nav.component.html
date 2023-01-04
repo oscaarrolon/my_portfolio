@@ -1,13 +1,13 @@
 <nav class="navigation">
     <div>
         <img src="../../../assets/images/mi_firma_blanca.png" alt="Logo">
-        <div class="toggle" (click)="toggleMenu()" [ngClass]="{'rotate': active}">
+        <div class="toggle" (click)="toggleMenu()" [ngClass]="{'rotate': isActive}">
             |||
         </div>
     </div>
-    <ul class="navigation_list" [ngClass]="{'active': active}">
+    <ul class="navigation_list" [ngClass]="{'active': isActive}">
         <li>
-            <a class=" navigation_link" routerLink="/home">Inicio</a>
+            <a class=" navigation_link" routerLink="/inicio">Inicio</a>
         </li>
         <li>
             <a class="navigation_link" routerLink="/about">Sobre mi</a>
