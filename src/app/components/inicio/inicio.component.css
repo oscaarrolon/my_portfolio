@@ -59,7 +59,22 @@
 }
 
 
-.active {
-    transition: .5s;
-    opacity: 0;
+
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        display: block;
+        display: flex;
+        grid-template-columns: 100%;
+        gap: 0px 0px;
+        min-height: 100vh;
+        transition: .5s;
+    }
+
+    .active {
+        transition: .5s;
+        opacity: 0;
+    }
+
 }
