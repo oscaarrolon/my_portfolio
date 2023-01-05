@@ -15,7 +15,7 @@ export class ConocemeComponent implements OnInit {
 
   ngOnInit() {
     this.activeService.active.subscribe((active: boolean) => {
-      this.active = !this.active
+      this.active = !active
     })
   }
 }
