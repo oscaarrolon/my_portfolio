@@ -37,6 +37,20 @@
     color: #b97b6e;
 }
 
+
+.svg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+}
+
+.svg svg {
+    width: 20px;
+    height: 20px;
+    transition: .5s;
+}
+
 .color {
     color: #fff;
 }
@@ -88,6 +102,20 @@
 
     .navigation ul li a {
         font-size: 20px;
+    }
+
+    .svg {
+        margin-top: 5%;
+        margin-left: 6%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .svg svg {
+        width: 30px;
+        height: 30px;
     }
 
     .toggle {
