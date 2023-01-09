@@ -28,7 +28,7 @@
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 7px;
     transition: .5s;
 }
 
@@ -36,15 +36,11 @@
     color: #ED6C17;
 }
 
-.navigation ul li a:active {
-    color: #ED6C17;
-}
-
 
 .svg {
     position: absolute;
     right: 0px;
-    top: 15px;
+    top: 140px;
     padding-right: 40px;
     display: flex;
     flex-direction: column;
@@ -119,8 +115,8 @@
     }
 
     .svg svg {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 
     .toggle {
@@ -128,7 +124,7 @@
         position: absolute;
         color: #fff;
         font-size: 30px;
-        top: 20px;
+        top: 25px;
         right: 20px;
         width: 30px;
         height: 30px;
@@ -140,5 +136,13 @@
         z-index: -1;
     }
 
+
+}
+
+@media screen and (max-width: 900px) {
+    .navigation ul {
+        display: flex;
+        gap: 10;
+    }
 
 }
