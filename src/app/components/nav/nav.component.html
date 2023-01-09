@@ -1,26 +1,26 @@
 <nav class="navigation">
     <div>
         <img src="../../../assets/images/LOGO NOMBRE OSCAR.png" alt="Logo">
-        <div class="toggle" (click)="toggleMenu()" [ngClass]="{'rotate': isActive}">
+        <div class="toggle" (click)="toggleMenu()" [ngClass]="{'rotate': isActive}" onchange="windowWidth()">
             |||
         </div>
     </div>
     <ul class="navigation_list" [ngClass]="{'active': isActive}">
-        <li>
+        <li (click)="hideMenu()">
             <a class=" navigation_link" routerLink="/inicio">Inicio</a>
         </li>
-        <li>
+        <li (click)="hideMenu()">
             <a class="navigation_link" routerLink="/conoceme">Conoceme</a>
         </li>
-        <li>
+        <li (click)="hideMenu()">
             <a class="navigation_link" routerLink="/contact">Curriculum</a>
         </li>
 
-        <li>
+        <li (click)="hideMenu()">
             <a class="navigation_link" routerLink="/contact">Contacto</a>
         </li>
     </ul>
-    <div class="svg" [ngClass]="{'active': isActive}">
+    <div class="svg">
 
         <a href="https://www.linkedin.com/in/oscar-rolon-5a271617b/" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24">

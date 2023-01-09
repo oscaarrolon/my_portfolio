@@ -22,7 +22,6 @@
     gap: 40px;
 }
 
-
 .navigation ul li a {
     text-align: center;
     text-decoration: none;
@@ -77,8 +76,6 @@
 }
 
 
-
-
 @media screen and (max-width: 800px) {
 
 
@@ -111,12 +108,15 @@
     }
 
     .svg {
-        margin-top: 5%;
-        margin-left: 6%;
         display: flex;
-        justify-content: flex-start;
+        flex-direction: row;
         align-items: flex-start;
         gap: 30px;
+        position: absolute;
+        top: 20px;
+        right: 100px;
+        padding-right: 0px;
+
     }
 
     .svg svg {

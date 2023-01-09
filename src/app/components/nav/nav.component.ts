@@ -18,6 +18,7 @@ export class NavComponent implements OnInit {
 
   ngOnInit() {
 
+
   }
 
   toggleMenu() {
@@ -26,5 +27,16 @@ export class NavComponent implements OnInit {
 
   }
 
-
+  hideMenu() {
+    this.isActive = !this.isActive
+    this.activeService.active.emit(this.isActive)
+  }
+  windowWidth() {
+    if (window.innerWidth < 800) {
+      this.isActive = !this.isActive
+      this.activeService.active.emit(this.isActive)
+    }
+  }
 }
+
+
