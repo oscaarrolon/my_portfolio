@@ -39,7 +39,7 @@
     padding: 0;
     background-image:
         linear-gradient(90deg, #fff 0%, #fff 43%, #ED6C17 57%, #ED6C17 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 
 
