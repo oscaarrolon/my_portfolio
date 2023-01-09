@@ -16,7 +16,11 @@
 }
 
 .text {
+    width: fit-content;
+    height: 80vh;
+    margin-top: 80px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     color: #fff;
@@ -40,7 +44,9 @@
     color: #b97b6e;
 }
 
-.text p {
+.parrafo {
+
+    overflow: scroll;
     font-size: 1em;
     font-weight: 300;
     line-height: 1.5;
