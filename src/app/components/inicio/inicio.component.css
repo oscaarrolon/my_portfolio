@@ -37,7 +37,12 @@
     line-height: 1.2;
     margin: 20px;
     padding: 0;
-    color: #b97b6e;
+    background-image:
+        linear-gradient(90deg, #fff 0%, #fff 43%, #ED6C17 57%, #ED6C17 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+
+
 }
 
 .text p {
