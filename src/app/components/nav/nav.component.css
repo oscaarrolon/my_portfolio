@@ -39,10 +39,16 @@
 
 
 .svg {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    padding-right: 40px;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     gap: 40px;
+
 }
 
 .svg svg {
