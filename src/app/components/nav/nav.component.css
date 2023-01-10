@@ -15,7 +15,6 @@
     height: 50px;
 }
 
-
 .navigation ul {
     display: flex;
     list-style: none;
@@ -36,7 +35,6 @@
     color: #ED6C17;
 }
 
-
 .svg {
     position: absolute;
     right: 0px;
@@ -47,7 +45,6 @@
     justify-content: flex-end;
     align-items: center;
     gap: 40px;
-
 }
 
 .svg svg {
@@ -66,14 +63,10 @@
 }
 
 .rotate {
-
     transform: rotate(90deg);
 }
 
-
 @media screen and (max-width: 800px) {
-
-
     .navigation {
         height: 12vh;
         flex-direction: column;
@@ -81,10 +74,7 @@
         align-items: flex-start;
         padding: 20px;
         background-color: #1b1c1d;
-
     }
-
-
 
     .navigation div img {
         width: 150px;
@@ -111,7 +101,6 @@
         top: 20px;
         right: 100px;
         padding-right: 0px;
-
     }
 
     .svg svg {
@@ -135,8 +124,6 @@
         opacity: 0;
         z-index: -1;
     }
-
-
 }
 
 @media screen and (max-width: 900px) {
