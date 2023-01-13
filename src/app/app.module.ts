@@ -7,6 +7,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { ConocemeComponent } from './components/conoceme/conoceme.component';
 import { CurriculumComponent } from './components/curriculum/curriculum.component';
+import { CvModalComponent } from './components/cv-modal/cv-modal.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CurriculumComponent } from './components/curriculum/curriculum.componen
     NavComponent,
     InicioComponent,
     ConocemeComponent,
-    CurriculumComponent
+    CurriculumComponent,
+    CvModalComponent
   ],
   imports: [
     BrowserModule,
