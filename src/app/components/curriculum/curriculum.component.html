@@ -6,13 +6,12 @@
             </a>
             <h1>Curriculum</h1>
         </div>
-        <div class="image">
-
-            <img src="../../../assets/images/Curriculum-Oscar (3)_page-0001.jpg" alt="">
+        <div class="image" (click)="openModal()">
+            <img src="../../../assets/images/Curriculum-Oscar.pdf" alt="">
         </div>
 
     </div>
     <div class="photo col-6">
     </div>
 </div>
-<cv-modal></cv-modal>
+<cv-modal *ngIf="activeDisplay ? 'modalWindowOpen' : 'modalWindow'"></cv-modal>
