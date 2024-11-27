@@ -1,17 +1,18 @@
-<div class="container" [ngClass]="{'active': active}">
+<div class="container" [ngClass]="{ active: active }">
     <div class="text animate__animated animate__bounce">
         <div class="titulo">
-            <a href="../../../assets/images/Curriculum-Oscar.pdf" download="Curriculum_Oscar_Rolon">
+            <a
+                href="../../../assets/ORA-CV.pdf"
+                download="Curriculum_Oscar_Rolon"
+            >
                 <h2>Descargar</h2>
             </a>
             <h1>Curriculum</h1>
         </div>
         <div class="image" (click)="openModal()">
-            <img src="../../../assets/images/Curriculum-Oscar.pdf" alt="">
+            <img src="../../../assets/ORA.jpg" alt="" />
         </div>
-
     </div>
-    <div class="photo col-6">
-    </div>
+    <div class="photo col-6"></div>
 </div>
 <cv-modal *ngIf="activeDisplay ? 'modalWindowOpen' : 'modalWindow'"></cv-modal>

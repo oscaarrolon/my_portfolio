@@ -59,17 +59,23 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "browserTarget": "front:build:production"
-            },
-            "development": {
-              "browserTarget": "front:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
+  "builder": "@angular-devkit/build-angular:dev-server",
+  "configurations": {
+    "production": {
+      "browserTarget": "front:build:production",
+      "allowedHosts": [
+        "be265dfc-4f35-4782-9dd1-7657a9889389-00-15hztqxlp5lxd.worf.replit.dev"
+      ]
+    },
+    "development": {
+      "browserTarget": "front:build:development",
+      "allowedHosts": [
+        "be265dfc-4f35-4782-9dd1-7657a9889389-00-15hztqxlp5lxd.worf.replit.dev"
+      ]
+    }
+  },
+  "defaultConfiguration": "development"
+},
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {

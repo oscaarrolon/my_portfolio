@@ -8,6 +8,8 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { ConocemeComponent } from './components/conoceme/conoceme.component';
 import { CurriculumComponent } from './components/curriculum/curriculum.component';
 import { CvModalComponent } from './components/cv-modal/cv-modal.component';
+import { RouterModule } from '@angular/router';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,11 @@ import { CvModalComponent } from './components/cv-modal/cv-modal.component';
     InicioComponent,
     ConocemeComponent,
     CurriculumComponent,
-    CvModalComponent
+    CvModalComponent,
+    ContactComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, RouterModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

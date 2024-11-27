@@ -1,0 +1,18 @@
+modules = ["web", "nodejs-20"]
+
+# Use 'ng serve' to start the Angular development server directly
+run = "ng serve"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+# Use 'ng serve' for deployment as well
+run = ["sh", "-c", "ng serve"]
+
+[[ports]]
+# This will expose the port that 'ng serve' uses, 
+# typically 4200, to the outside world.
+localPort = 4200
+externalPort = 4200
+exposeLocalhost = true
